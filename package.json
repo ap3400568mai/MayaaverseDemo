@@ -1,8 +1,8 @@
 {
   "name": "com.mayaverse.test",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "displayName": "Mayaa Verse Pvt Ltd",
-  "description": "this is testing for custom unity package for version 1.0.2",
+  "description": "this is testing for custom unity package for version 3.0.1",
   "unity": "2019.1",
  
   "keywords": [
