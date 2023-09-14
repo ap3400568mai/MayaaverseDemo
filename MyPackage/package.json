@@ -1,19 +1,18 @@
 {
-  "name": "com.mayaverse.tech",
-  "version": "2.0.1",
+  "name": "com.mayaverse.test",
+  "version": "3.0.0",
   "displayName": "Mayaa Verse Pvt Ltd",
   "description": "this is testing for custom unity package for version 1.0.2",
   "unity": "2019.1",
-  
+ 
   "keywords": [
     "Maaya",
     "Verse",
     "MayaaVerse"
   ],
-  "_upm": {   
+  "_upm": {
     "changelog": "### Added\n\n* New initialization and consent flow. Please see the migration guide for more information: https://docs.unity.com/analytics/en/manual/AnalyticsSDK5MigrationGuide\n\n### Deprecated\n\n* The old initialization and consent flow should no longer be used and will be removed in a future version of the SDK. Please see the migration guide for more information: https://docs.unity.com/analytics/en/manual/AnalyticsSDK5MigrationGuide\n\n### Changed\n\n* Updated `com.unity.services.core` dependency to 1.10.1\n\n### Breaking Changes\n* The package no longer has a dependency on Newtonsoft.Json\n* The package now has a dependency on the Unity JsonSerialize module (JsonUtility)\n* A number of elements that were previously marked as Obsolete have now been removed\n\n### Fixed\n\n* Analytics no longer blocks services initialization (`UnityServices.InitializeAsync`) if there is no internet connection\n* It is now possible to opt in to data collection during a session where the player has previously opted out (requires migration to the new consent flow)\n* Application.persistentDataPath is no longer requested on some platforms where access to the file system is denied by default\n* Event buffer is now cleared on a wider variety of server responses\n* Events are more eagerly cached to disk (if available) on shutdown to prevent data loss if game is closed while offline\n* Data deletion requests are now sent using the custom user ID if one is set, instead of always using the installation ID"
   },
- 
   "author": {
     "name": "Amit Pandey",
     "email": "amit.pandey@mai.io",
